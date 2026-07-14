@@ -6,12 +6,13 @@
 <title>Clayton Ramus — Portfolio</title>
 <style>
   :root {
-    --bg: #0f1115;
-    --bg-card: #171a21;
-    --text: #e8e9ec;
-    --text-muted: #9a9ea8;
-    --accent: #6ee7b7;
-    --border: #262a33;
+    --bg: #fbfaf0;
+    --bg-band: #d8d7c9;
+    --bg-card: #f2f1e3;
+    --text: #57564a;
+    --text-muted: #8a8875;
+    --accent: #6b6a52;
+    --border: #e1dfcf;
     --max-width: 980px;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -21,19 +22,24 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.6;
   }
-  header, main, footer {
+  main, footer {
     max-width: var(--max-width);
     margin: 0 auto;
     padding: 0 24px;
   }
+  .hero-band {
+    background: var(--bg-band);
+  }
   header {
-    padding-top: 72px;
-    padding-bottom: 40px;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 72px 24px 40px;
   }
   h1 {
     font-size: 2.4rem;
-    font-weight: 700;
+    font-weight: 800;
     letter-spacing: -0.02em;
+    color: var(--text);
   }
   .tagline {
     color: var(--text-muted);
@@ -156,7 +162,7 @@
   .tag {
     font-size: 0.75rem;
     color: var(--accent);
-    background: rgba(110, 231, 183, 0.1);
+    background: rgba(107, 106, 82, 0.12);
     padding: 3px 9px;
     border-radius: 999px;
   }
@@ -198,15 +204,17 @@
 </head>
 <body>
 
-  <header>
-    <h1>Clayton Ramus</h1>
-    <p class="tagline">Electrical Engineering student — embedded systems, robotics, controls, sensor integration.</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <div class="hero-band">
+    <header>
+      <h1>Clayton Ramus</h1>
+      <p class="tagline">Electrical Engineering student — embedded systems, robotics, controls, sensor integration.</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+  </div>
 
   <main>
     <section id="about">
@@ -402,7 +410,7 @@
       <h2>Contact</h2>
       <p>Email: <a href="mailto:clayramus@gmail.com">clayramus@gmail.com</a></p>
       <p>School email: <a href="mailto:cramus@wpi.edu">cramus@wpi.edu</a></p>
-      <p>GitHub: <a href="#">github.com/your-username</a></p>
+      <p>GitHub: <a href="https://github.com/ClayRamus" target="_blank" rel="noopener">github.com/ClayRamus</a></p>
     </section>
   </main>
 
